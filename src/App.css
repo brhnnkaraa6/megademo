@@ -1,0 +1,49 @@
+.site-layout-content {
+    min-height: 280px;
+    padding: 24px;
+}
+
+.ant-layout{
+    background: transparent !important;
+}
+.footer-header{
+    font-size: 25px;
+}
+.ant-list-split .ant-list-item{
+    border-bottom: 0px !important;
+}
+.ant-list-split .ant-list-header{
+    border-bottom: 0px !important;
+}
+.footer-icon-wrapper{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    float: left;
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.top-background{
+    background-color: #2C3F5D;
+    height: 50px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.header{
+    background-color: #2C3F5D;
+}
+
+.layout-padding{
+    padding: 24px 48px;
+}
