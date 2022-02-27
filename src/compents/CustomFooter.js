@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Divider, List } from 'antd'
 import { LinkedinOutlined, YoutubeOutlined } from '@ant-design/icons';
+import logo from '../img/footer_logo.png'
 const corporate = [
   'Hakkımızda',
   'Biz Kimiz',
@@ -10,17 +11,17 @@ const corporate = [
 ];
 const others = [
   'Hesaplamalar',
-  'Japanese princess to wed commoner.',
-  'Australian walks 100km after outback crash.',
-  'Man charged over missing wedding girl.',
-  'Los Angeles battles huge wildfires.',
+  'Vergi Takvimi',
+  'Güncel Bilgiler',
+  'Medya',
+  'İletişim',
 ];
 const more = [
-  'Kişisel verilerin korunması',
-  'Japanese princess to wed commoner.',
-  'Australian walks 100km after outback crash.',
-  'Man charged over missing wedding girl.',
-  'Los Angeles battles huge wildfires.',
+  'Kişisel verilerin',
+  'Korunması',
+  'Kullanım',
+  'Koşulları ve',
+  'Gizlilik Politikası',
 ];
 class CustomFooter extends React.Component {
 
@@ -40,8 +41,8 @@ class CustomFooter extends React.Component {
     return (
       <div className="layout-padding">
         <Divider style={{ 'background-color': '#9597A3' }} />
-        <Row gutter={16} justify='center'>
-          <Col className="gutter-row" span='auto'>
+        <Row gutter={16} justify='center' style={{margin:'0 6rem'}}>
+          <Col className="gutter-row" span='6'>
             <List
               header={<div class="footer-header">KURUMSAL</div>}
               bordered={false}
@@ -53,7 +54,7 @@ class CustomFooter extends React.Component {
               )}
             />
           </Col>
-          <Col className="gutter-row" span='auto'>
+          <Col className="gutter-row" span='6'>
             <List
               header={<div class="footer-header">DİĞER</div>}
               bordered={false}
@@ -64,7 +65,7 @@ class CustomFooter extends React.Component {
                 </List.Item>
               )}
             /></Col>
-          <Col className="gutter-row" span='auto'>
+          <Col className="gutter-row" span='6'>
             <List
               header={<div class="footer-header">DAHA FAZLA</div>}
               bordered={false}
@@ -75,15 +76,15 @@ class CustomFooter extends React.Component {
                 </List.Item>
               )}
             /></Col>
-          <Col className="gutter-row" span='auto'>
-            <div style={{width: '500px', height: '250px', backgroundColor: 'black'}}></div>
+          <Col className="gutter-row" span='6'>
+            <img className='logo' src={logo}/>
           </Col>
         </Row>
         <Divider style={{ 'background-color': '#9597A3' }} />
         <Row justify='space-between'>
           <Col span='auto'>
             <div>
-              MEga Denetim
+              <p style={{'font-weight': 'bold'}}>©2021 Mega Denetim Tüm Hakları Saklıdır.</p>
             </div>
           </Col>
           <Col span='auto'>

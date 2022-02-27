@@ -1,5 +1,6 @@
 import React from 'react'
-import { Row, Col, Breadcrumb } from 'antd'
+import { Row, Col, Breadcrumb, Typography} from 'antd'
+
 class About extends React.Component {
 
     constructor(props) {
@@ -15,11 +16,13 @@ class About extends React.Component {
 
     render() {
 
+        const { Title } = Typography;
+
         return (
-            <div className="container" style={{ height: "750px" }}>
+            <div className="container">
                 <Row justify='center'>
-                    <Col span='24'>
-                        <img src="https://cdnntr1.img.sputniknews.com/img/07e5/08/1f/1048476386_0:0:740:417_1920x0_80_0_0_e0a0e5516645d72631b8192440da132a.jpg" style={{width: '100%', height: '300px'}}></img>
+                    <Col span='24' className='outer'>
+                        <img className='inner' src="https://cdnntr1.img.sputniknews.com/img/07e5/08/1f/1048476386_0:0:740:417_1920x0_80_0_0_e0a0e5516645d72631b8192440da132a.jpg" style={{width: '100%',height:"100%",objectFit:"cover"}}></img>
                     </Col>
                 </Row>
                 <Row justify='start'>
@@ -36,11 +39,10 @@ class About extends React.Component {
                         </Breadcrumb>
                     </Col>
                 </Row>
-                <Row justify='start'>
-                    <Col span='auto'>
-                        Mega
-                    </Col>
-                </Row>
+                <div>
+                <Title>Biz Kimiz</Title>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
             </div>
         )
     }
