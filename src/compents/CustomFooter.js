@@ -40,51 +40,51 @@ class CustomFooter extends React.Component {
 
     return (
       <div className="layout-padding">
-        <Divider style={{ 'background-color': '#9597A3' }} />
+        <Divider style={{ 'backgroundColor': '#9597A3' }} />
         <Row gutter={16} justify='center' style={{margin:'0 6rem'}}>
-          <Col className="gutter-row" span='6'>
+          <Col className="gutter-row" xs={24} sm={12} md={12} lg={6} xl={6}>
             <List
-              header={<div class="footer-header">KURUMSAL</div>}
+              header={<div className="footer-header custom-item">KURUMSAL</div>}
               bordered={false}
               dataSource={corporate}
               renderItem={item => (
-                <List.Item>
+                <List.Item  className='custom-item'>
                   {item}
                 </List.Item>
               )}
             />
           </Col>
-          <Col className="gutter-row" span='6'>
+          <Col className="gutter-row" xs={24} sm={12} md={12} lg={6} xl={6}>
             <List
-              header={<div class="footer-header">DİĞER</div>}
+              header={<div className="footer-header custom-item">DİĞER</div>}
               bordered={false}
               dataSource={others}
               renderItem={item => (
-                <List.Item>
+                <List.Item className='custom-item'>
                   {item}
                 </List.Item>
               )}
             /></Col>
-          <Col className="gutter-row" span='6'>
+          <Col className="gutter-row" xs={24} sm={12} md={12} lg={6} xl={6}>
             <List
-              header={<div class="footer-header">DAHA FAZLA</div>}
+              header={<div className="footer-header custom-item">DAHA FAZLA</div>}
               bordered={false}
               dataSource={more}
               renderItem={item => (
-                <List.Item>
+                <List.Item  className='custom-item'>
                   {item}
                 </List.Item>
               )}
             /></Col>
-          <Col className="gutter-row" span='6'>
-            <img className='logo' src={logo}/>
+          <Col className="gutter-row" xs={24} sm={12} md={12} lg={6} xl={6}>
+            <img className='footer-logo' src={logo}/>
           </Col>
         </Row>
-        <Divider style={{ 'background-color': '#9597A3' }} />
+        <Divider style={{ 'backgroundColor': '#9597A3' }} />
         <Row justify='space-between'>
           <Col span='auto'>
             <div>
-              <p style={{'font-weight': 'bold'}}>©2021 Mega Denetim Tüm Hakları Saklıdır.</p>
+              <p style={{'fontWeight': 'bold'}}>©2021 Mega Denetim Tüm Hakları Saklıdır.</p>
             </div>
           </Col>
           <Col span='auto'>

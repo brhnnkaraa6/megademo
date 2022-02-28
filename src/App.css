@@ -3,6 +3,12 @@
 html,body{
     font-family: 'Montserrat', sans-serif!important;
 }
+
+a{
+    color: inherit !important;
+    text-decoration: none; /* no underline */
+}
+
 .site-layout-content {
     min-height: 280px;
     padding: 24px;
@@ -31,6 +37,20 @@ html,body{
 }
 .logo {
     width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 576px) {
+    .custom-item{
+        white-space: nowrap;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+.footer-logo {
+    width: 50%;
     height: auto;
 }
 h1.ant-typography{
@@ -62,13 +82,33 @@ h1.ant-typography{
     background-color: transparent!important;
 }
 
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu:hover
+{
+content: "";
+background-color: transparent;
+transition: none
+}
+.ant-menu-overflow-item:hover:after {
+    content: "" !important;
+    border-bottom: 5px solid #00A4BF !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 20px !important;
+    height: 1px;
+    width: 30px;
+}
 .ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover::after, .ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu:hover::after
 {
 content: "";
-width: 40px;
-border-bottom: 5px solid red;
-padding-top: 10px;
+border-bottom: 0px;
 background-color: transparent;
+transition: none
+}
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item::after, .ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu::after
+{
+border-bottom: 0px;
+transition: none
 }
 
 .outer {

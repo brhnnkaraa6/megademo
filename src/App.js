@@ -6,6 +6,7 @@ import {
 import './App.css';
 import 'antd/dist/antd.css';
 import About from "./pages/About";
+import Services from "./pages/Services";
 import CustomFooter from "./compents/CustomFooter";
 import CustomHeader from "./compents/CustomHeader";
 import { Layout } from 'antd';
@@ -13,24 +14,29 @@ import { Layout } from 'antd';
 const { Content } = Layout;
 function App() {
   return (
-    <Layout className="layout">
-      <CustomHeader />
-      <div style={{position: 'relative'}}>
-        <div className="top-background"></div>
-        <Content style={{ padding: '0 50px' }}>
-          <div>
-            <div className="site-layout-content">
-              <Router>
-                <Switch>
+    <Router>
+      <Switch>
+        <Layout className="layout">
+          <CustomHeader />
+          <div style={{ position: 'relative' }}>
+            <div className="top-background"></div>
+            <Content style={{ padding: '0 50px' }}>
+              <div>
+                <div className="site-layout-content">
                   <Route exact path="/about" component={About}></Route>
-                </Switch>
-              </Router>
-            </div>
+                  <Route exact path="/services" component={Services}></Route>
+                  <Route exact path="/calculation" component={About}></Route>
+                  <Route exact path="/tax-schedule" component={About}></Route>
+                  <Route exact path="/media" component={About}></Route>
+                  <Route exact path="/contact" component={About}></Route>
+                </div>
+              </div>
+            </Content>
           </div>
-        </Content>
-      </div>
-      <CustomFooter />
-    </Layout>
+          <CustomFooter />
+        </Layout>
+      </Switch>
+    </Router>
   );
 }
 
