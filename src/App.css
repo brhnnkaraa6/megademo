@@ -2,6 +2,7 @@
 
 html,body{
     font-family: 'Montserrat', sans-serif!important;
+    color: #2C3F5D!important;
 }
 
 a{
@@ -13,6 +14,7 @@ a{
     min-height: 280px;
     padding: 24px;
 }
+
 
 .ant-layout{
     background: transparent !important;
@@ -26,11 +28,16 @@ a{
 .ant-list-split .ant-list-header{
     border-bottom: 0px !important;
 }
+
+.ant-list .ant-list-split .custom-item{
+    color: #2C3F5D!important;
+}
+
 .footer-icon-wrapper{
     width: 30px;
     height: 30px;
     border-radius: 25px;
-    background-color: aqua;
+    background-color: #00A4BF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,15 +53,17 @@ a{
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
+        
     }
 }
 
 .footer-logo {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 h1.ant-typography{
     padding-top: 3rem;
+    color: #2C3F5D!important;
 }
 
 .top-background{
@@ -71,6 +80,7 @@ h1.ant-typography{
 
 .layout-padding{
     padding: 24px 48px;
+    
 }
 
 .ant-menu,.ant-menu-dark .ant-menu-item{
@@ -86,7 +96,9 @@ h1.ant-typography{
 {
 content: "";
 background-color: transparent;
-transition: none
+transition: none;
+color: #01A5C0!important;
+
 }
 .ant-menu-overflow-item:hover:after {
     content: "" !important;

@@ -40,15 +40,15 @@ class CustomFooter extends React.Component {
 
     return (
       <div className="layout-padding">
-        <Divider style={{ 'backgroundColor': '#9597A3' }} />
+        <Divider style={{ 'backgroundColor': '#9597A3', 'color': '#2C3F5D' }} />
         <Row gutter={16} justify='center' style={{margin:'0 6rem'}}>
-          <Col className="gutter-row" xs={24} sm={12} md={12} lg={6} xl={6}>
+          <Col className="gutter-row" xs={24} sm={12} md={12} lg={6} xl={6} style={{ 'color': '#2C3F5D' }}>
             <List
-              header={<div className="footer-header custom-item">KURUMSAL</div>}
+              header={<div className="footer-header custom-item" style={{ 'color': '#2C3F5D' }}>KURUMSAL</div>}
               bordered={false}
               dataSource={corporate}
               renderItem={item => (
-                <List.Item  className='custom-item'>
+                <List.Item style={{ 'color': '#2C3F5D' }}  className='custom-item'>
                   {item}
                 </List.Item>
               )}
@@ -56,22 +56,22 @@ class CustomFooter extends React.Component {
           </Col>
           <Col className="gutter-row" xs={24} sm={12} md={12} lg={6} xl={6}>
             <List
-              header={<div className="footer-header custom-item">DİĞER</div>}
+              header={<div className="footer-header custom-item" style={{ 'color': '#2C3F5D' }}>DİĞER</div>}
               bordered={false}
               dataSource={others}
               renderItem={item => (
-                <List.Item className='custom-item'>
+                <List.Item style={{ 'color': '#2C3F5D' }} className='custom-item'>
                   {item}
                 </List.Item>
               )}
             /></Col>
           <Col className="gutter-row" xs={24} sm={12} md={12} lg={6} xl={6}>
             <List
-              header={<div className="footer-header custom-item">DAHA FAZLA</div>}
+              header={<div className="footer-header custom-item" style={{ 'color': '#2C3F5D' }}>DAHA FAZLA</div>}
               bordered={false}
               dataSource={more}
               renderItem={item => (
-                <List.Item  className='custom-item'>
+                <List.Item style={{ 'color': '#2C3F5D' }} className='custom-item'>
                   {item}
                 </List.Item>
               )}
