@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col, Breadcrumb, Typography} from 'antd'
+import logo3 from '../img/vergihizmetleri.png'
 
 class Services extends React.Component {
 
@@ -21,7 +22,7 @@ class Services extends React.Component {
             <div className="container">
                 <Row justify='center'>
                     <Col span='24' className='outer'>
-                        <img className='inner' src="https://cdnntr1.img.sputniknews.com/img/07e5/08/1f/1048476386_0:0:740:417_1920x0_80_0_0_e0a0e5516645d72631b8192440da132a.jpg" style={{width: '100%',height:"100%",objectFit:"cover"}}></img>
+                        <img className='inner' src={logo3} style={{width: '100%',height:"100%",objectFit:"cover"}}></img>
                     </Col>
                 </Row>
                 <Row justify='start'>

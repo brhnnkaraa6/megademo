@@ -58,7 +58,7 @@ class CustomHeader extends React.Component {
                   <Menu.Item key="setting:6">Option 1</Menu.Item>
                   <Menu.Item key="setting:7">Option 2</Menu.Item>
                 </Menu.ItemGroup>
-              </SubMenu><SubMenu key="SubMenu4" title="VERGİ TAKVİMİ">
+              </SubMenu><SubMenu key="SubMenu4" title={<Link to='/taxschedule'>VERGİ TAKVİMİ</Link>}>
                 <Menu.ItemGroup title="">
                   <Menu.Item key="setting:8">Option 1</Menu.Item>
                   <Menu.Item key="setting:9">Option 2</Menu.Item>

@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import CustomFooter from "./compents/CustomFooter";
 import CustomHeader from "./compents/CustomHeader";
 import { Layout } from 'antd';
+import Taxschedule from "./pages/Taxschedule";
 
 const { Content } = Layout;
 function App() {
@@ -26,7 +27,7 @@ function App() {
                   <Route exact path="/about" component={About}></Route>
                   <Route exact path="/services" component={Services}></Route>
                   <Route exact path="/calculation" component={About}></Route>
-                  <Route exact path="/tax-schedule" component={About}></Route>
+                  <Route exact path="/taxschedule" component={Taxschedule}></Route>
                   <Route exact path="/media" component={About}></Route>
                   <Route exact path="/contact" component={About}></Route>
                 </div>

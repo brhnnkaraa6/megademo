@@ -5,6 +5,17 @@ html,body{
     color: #2C3F5D!important;
 }
 
+th{
+    border-bottom: solid;
+    
+}
+
+td{
+    border-bottom: 1px solid;
+    margin-left: auto;
+  margin-right: auto;
+}
+
 a{
     color: inherit !important;
     text-decoration: none; /* no underline */
